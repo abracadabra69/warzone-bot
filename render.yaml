@@ -1,11 +1,11 @@
 services:
   - type: web
     name: warzone-bot
-    env: python
+    runtime: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
     envVars:
       - key: BOT_TOKEN
-        value: 7567621284:AAGcl41NapdhBfsU4LvSrVMC_GR2tXqJoSE
+        value: 7567621284:AAGc...твоя часть токена...
       - key: WEBHOOK_URL
         value: https://warzone-bot.onrender.com/
