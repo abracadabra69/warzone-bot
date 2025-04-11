@@ -16,7 +16,10 @@ async def set_webhook():
     url = f"{API_URL}/setWebhook"
     response = requests.post(url, data={"url": WEBHOOK_URL})
     print("Webhook set:", response.json())
-
+# Проверка, жив ли сервер
+@app.get("/")
+def root():
+    return {"message": "Бот живой, жди Telegram"}
 # Обработка входящих сообщений
 @app.post("/")
 async def receive_update(request: Request):
