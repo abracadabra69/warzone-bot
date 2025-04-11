@@ -6,6 +6,6 @@ services:
     startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
     envVars:
       - key: BOT_TOKEN
-        value: 7567621284:AAGc...твоя часть токена...
+        value: 7567621284:AAGcl41NapdhBfsU4LvSrVMC_GR2tXqJoSE
       - key: WEBHOOK_URL
         value: https://warzone-bot.onrender.com/
