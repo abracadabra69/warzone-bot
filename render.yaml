@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: warzone-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7567621284:AAGcl41NapdhBfsU4LvSrVMC_GR2tXqJoSE
