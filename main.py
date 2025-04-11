@@ -43,3 +43,6 @@ def send_message(chat_id, text):
 # Пока фейк-мета, позже подключим парсер
 def get_fake_meta():
     return get_meta_loadouts()
+    @app.get("/")
+def root():
+    return {"status": "Бот работает!"}
