@@ -41,4 +41,4 @@ def send_message(chat_id, text):
 
 # Пока фейк-мета, позже подключим парсер
 def get_fake_meta():
-    return "Топ мета:\n1. RAM-9\n2. MCW\n3. WSP Swarm"
+    return get_meta_loadouts()
