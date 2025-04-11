@@ -2,10 +2,10 @@ services:
   - type: web
     name: warzone-bot
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
     envVars:
       - key: BOT_TOKEN
         value: 7567621284:AAGcl41NapdhBfsU4LvSrVMC_GR2tXqJoSE
-      - key: PARSE_API_URL
-        value: https://warzoneloadout.games/api/top5
+      - key: WEBHOOK_URL
+        value: https://warzone-bot.onrender.com/
