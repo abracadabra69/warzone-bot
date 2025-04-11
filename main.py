@@ -1,3 +1,4 @@
+from parser import get_meta_loadouts
 import os
 import requests
 from fastapi import FastAPI, Request
